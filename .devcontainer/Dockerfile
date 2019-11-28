@@ -35,6 +35,8 @@ RUN apt-get update \
     #
     # Install eslint globally
     && npm install -g eslint \
+    # Install Gatsby CLI
+    && npm install -g gatsby-cli \
     #
     # Create a non-root user to use if preferred - see https://aka.ms/vscode-remote/containers/non-root-user.
     && if [ "$USER_GID" != "1000" ]; then groupmod node --gid $USER_GID; fi \
