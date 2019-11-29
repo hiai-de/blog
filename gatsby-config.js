@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
-    description: 'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
+    title: 'Heidelberger Institut für angewandte Informatik',
+    description: 'Neuigkeiten von und Informationen über das Heidelberger Institut für angewandte Informatik',
     author: '@gatsbyjs',
   },
   plugins: [
@@ -42,6 +42,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
+    'gatsby-plugin-sass',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-manifest',

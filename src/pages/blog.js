@@ -22,7 +22,7 @@ export const query = graphql`
 const BlogPage = ({ data }) => (
   <Layout>
     <main>
-      <h1>All Blog entries:</h1>
+      <h1>Blogartikel</h1>
 
       <ul>
         {
