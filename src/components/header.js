@@ -4,7 +4,7 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 
 const Header = ({ siteTitle }) => (
-  <header style={{ background: '#20232a' }}>
+  <header>
     <Container
       style={{
         paddingBottom: '1.0875rem',
