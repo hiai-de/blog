@@ -14,6 +14,12 @@ const CustomNavbar = ({ pageInfo }) => {
               </Nav.Link>
             </Link>
 
+            <Link to="/about" className="link-no-style">
+              <Nav.Link as="span" eventKey="about">
+                Über uns
+              </Nav.Link>
+            </Link>
+
             <Link to="/imprint" className="link-no-style">
               <Nav.Link as="span" eventKey="imprint">
                 Impressum
