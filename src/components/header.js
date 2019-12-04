@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => {
         <Container>
           <Row className="align-items-center">
             <Col md="auto" className="text-center">
-              <Img fixed={data.placeholderImage.childImageSharp.fixed} fadeIn={false} />
+              <Img fixed={data.placeholderImage.childImageSharp.fixed} fadeIn={false} loading="eager" />
             </Col>
             <Col className="text-center">
               <h1>
