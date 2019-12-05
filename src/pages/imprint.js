@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import InvisibleRecaptcha from '../components/invisibleRecaptcha'
@@ -40,6 +41,11 @@ const ImprintPage = () => {
         diese Website direkt oder indirekt verweist. Das HIAI ist für den Inhalt einer Seite, die mit einem solchen Link erreicht wird,
         nicht verantwortlich. Das HIAI behält sich das Recht vor, ohne vorherige Ankündigung Änderungen oder Ergänzungen der
         bereitgestellten Informationen vorzunehmen.
+      </p>
+
+      <h2>Datenschutzerklärung</h2>
+      <p>
+        Unsere Datenschutzerklärung finden Sie <Link to="/dataprotection">hier</Link>.
       </p>
 
       <InvisibleRecaptcha onVerified={() => setVerified(true)} />
