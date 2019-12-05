@@ -5,7 +5,7 @@ import useSSR from 'use-ssr'
 const InvisibleRecaptcha = (props) => {
   let recaptchaInstance
 
-  const { isBrowser } = useSSR();
+  const { isBrowser } = useSSR()
   const verifyCallback = token => { props.onVerified(token) }
 
   useEffect(() => {

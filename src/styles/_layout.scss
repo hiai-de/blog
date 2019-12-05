@@ -1,4 +1,4 @@
-div.main {
+  div.main {
     min-height: 100vh;
     padding-bottom: 60px;
   }
@@ -10,6 +10,12 @@ div.main {
   a.link-no-style {
     &:hover {
       text-decoration: none;
+    }
+  }
+
+  a.link-active > {
+    span.nav-link {
+      color: white !important;
     }
   }
   
@@ -43,4 +49,8 @@ div.main {
 
   .grecaptcha-badge {
     visibility: hidden;
+  }
+
+  html {
+    overflow-y: scroll; 
   }
