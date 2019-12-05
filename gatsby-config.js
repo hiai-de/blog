@@ -3,6 +3,20 @@ module.exports = {
     title: 'Heidelberger Institut für angewandte Informatik',
     description: 'Neuigkeiten von und Informationen über das Heidelberger Institut für angewandte Informatik',
     author: '@gatsbyjs',
+    menuLinks: [
+      {
+        title: 'Blog',
+        link: '/blog'
+      },
+      {
+        title: 'Über uns',
+        link: '/about'
+      },
+      {
+        title: 'Impressum',
+        link: '/imprint'
+      }
+    ],
   },
   plugins: [
     {

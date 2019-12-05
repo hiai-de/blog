@@ -2,29 +2,19 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Navbar, Nav, Container } from 'react-bootstrap'
 
-const CustomNavbar = ({ pageInfo }) => {
+const HeaderLink = ({ menuLink }) => (
+  <Link to={menuLink.link} className="link-no-style" activeClassName="link-active">
+    <Nav.Link as="span">{menuLink.title}</Nav.Link>
+  </Link>
+)
+
+const CustomNavbar = ({ menuLinks }) => {
   return (
     <>
       <Navbar variant="dark" id="site-navbar">
         <Container>
-          <Nav activeKey={pageInfo && pageInfo.pageName}>
-            <Link to="/blog" className="link-no-style" activeClassName="link-active">
-              <Nav.Link as="span">
-                Blog
-              </Nav.Link>
-            </Link>
-
-            <Link to="/about" className="link-no-style" activeClassName="link-active">
-              <Nav.Link as="span">
-                Über uns
-              </Nav.Link>
-            </Link>
-
-            <Link to="/imprint" className="link-no-style" activeClassName="link-active">
-              <Nav.Link as="span">
-                Impressum
-              </Nav.Link>
-            </Link>
+          <Nav>
+            { menuLinks.map(menuLink => <HeaderLink key={menuLink.link} menuLink={menuLink} />) }
           </Nav>
         </Container>
       </Navbar>

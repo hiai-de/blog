@@ -6,12 +6,16 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Header from './header'
 import Navbar from './navbar'
 
-const Layout = ({ children, pageInfo }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
           title
+          menuLinks {
+            title
+            link
+          }
         }
       }
     }
@@ -26,7 +30,7 @@ const Layout = ({ children, pageInfo }) => {
           </Col>
         </Row>
         
-        <Navbar pageInfo={pageInfo} />
+        <Navbar menuLinks={data.site.siteMetadata.menuLinks} />
         
         <Row noGutters>
           <Col>
