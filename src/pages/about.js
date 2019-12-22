@@ -30,7 +30,7 @@ const AboutPage = () => (
 
     <p>Unsere <a href={satzung}>Satzung</a> können Sie sich <a href={satzung}>hier</a> herunterladen.</p>
 
-    <p><a href={mitgliedsantrag}>Antrag auf Mitgliedschaft</a> – wir Freuen und auf Ihre Mitgliedschaft.</p>
+    <p><a href={mitgliedsantrag}>Antrag auf Mitgliedschaft</a> – wir freuen uns auf Ihre Mitgliedschaft.</p>
   </Layout>
 )
 
