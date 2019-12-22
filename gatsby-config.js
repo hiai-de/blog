@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Heidelberger Institut für angewandte Informatik',
+    title: 'Heidelberger Institut für angewandte Informatik e.V.',
     description: 'Neuigkeiten von und Informationen über das Heidelberger Institut für angewandte Informatik',
     author: '@gatsbyjs',
     menuLinks: [

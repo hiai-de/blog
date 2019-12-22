@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
           <Col className="footer-col">
             <footer>
               <span>
-                  © {new Date().getFullYear()} Heidelberger Institut für angewandte Informatik
+                  © {new Date().getFullYear()} {data.site.siteMetadata.title}
               </span>
             </footer>
           </Col>
