@@ -19,3 +19,9 @@ That's a silly sample entry with an image.
 ## Heading 1.2
 
 Some other content.
+
+### Sample Code
+
+```csharp
+Console.WriteLine("Hello World");
+```
