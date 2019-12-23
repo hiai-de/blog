@@ -7,6 +7,7 @@ import mitgliedsantrag from '../downloads/Mitgliedsantrag.pdf'
 const AboutPage = () => (
   <Layout>
     <SEO title="Über uns" />
+    
     <h1>Über uns</h1>
 
     <p>

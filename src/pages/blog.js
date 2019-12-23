@@ -1,6 +1,8 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import Img from 'gatsby-image'
 import { Card, Container, Row, Col } from 'react-bootstrap'
+import SEO from '../components/seo'
 import Layout from '../components/layout'
 
 export const query = graphql`
@@ -12,6 +14,13 @@ export const query = graphql`
               path
               title
               date(formatString: "MMMM DD, YYYY")
+              coverImage {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid_tracedSVG
+                  }
+                }
+              }
             }
             id
             excerpt
@@ -22,17 +31,26 @@ export const query = graphql`
 `
 
 const createChunks = (array, size) => {
-  const chunks = [];
+  const chunks = []
 
   for (let i = 0; i < array.length; i += size) {
     chunks.push(array.slice(i, i+size))
   }
   
-  return chunks;
+  return chunks
 }
+
+const CoverImage = ({ coverImage }) =>
+  coverImage 
+    ? <Img className="card-img-top" fluid={coverImage.childImageSharp.fluid} />
+    : null
 
 const BlogEntry = ({ node }) => 
   <Card>
+    <Link to={`/blog/${node.frontmatter.path}/`}>
+      <CoverImage coverImage={node.frontmatter.coverImage} />
+    </Link>
+
     <Card.Body>
       <Card.Title>
         <Link to={`/blog/${node.frontmatter.path}/`}>
@@ -60,8 +78,8 @@ const BlogPage = ({ data }) => {
 
   return (
     <Layout>
-      <h1>Blogartikel</h1>
-
+      <SEO title="Blog" />
+      
       <Container>
         { chunks.map((x, index) => <BlogRow key={`Row_${index}`} nodes={x} />)}
       </Container>

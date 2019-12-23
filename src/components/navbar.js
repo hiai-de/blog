@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { Navbar, Nav, Container } from 'react-bootstrap'
 
 const HeaderLink = ({ menuLink }) => (
-  <Link to={menuLink.link} className="link-no-style" activeClassName="link-active">
+  <Link to={menuLink.link} className="link-no-style" activeClassName="link-active" partiallyActive={true}>
     <Nav.Link as="span">{menuLink.title}</Nav.Link>
   </Link>
 )
