@@ -9,8 +9,8 @@ const Header = ({ siteTitle }) => {
     query {
       placeholderImage: file(relativePath: {eq: "logo.png"}, sourceInstanceName: {eq: "images"}) {
         childImageSharp {
-          fixed(width: 300) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -21,17 +21,17 @@ const Header = ({ siteTitle }) => {
     <header>
       <Container
         style={{
-          paddingBottom: '1.0875rem',
-          paddingTop: '1.0875rem',
+          paddingTop: '1rem',
+          paddingBottom: '1rem',
         }}
       >
-        <Container>
+        <Container className="p-0">
           <Row className="align-items-center">
-            <Col md="auto" className="text-center">
-              <Img fixed={data.placeholderImage.childImageSharp.fixed} fadeIn={false} loading="eager" />
+            <Col xs={3}>
+              <Img fluid={data.placeholderImage.childImageSharp.fluid} fadeIn={false} loading="eager" />
             </Col>
-            <Col className="text-center">
-              <h1>
+            <Col xs={9} className="text-center">
+              <h1 className="header-title">
                 <Link
                   to="/"
                   style={{

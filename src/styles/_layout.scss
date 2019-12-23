@@ -1,3 +1,7 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+
   div.main {
     min-height: 100vh;
     padding-bottom: 60px;
@@ -45,6 +49,16 @@
 
   header {
     background: $color-primary;
+    
+    .header-title {
+      @include media-breakpoint-between(xs, sm) {
+        font-size: 1.1rem;
+      }
+
+      @include media-breakpoint-between(sm, md) {
+        font-size: 1.6rem;
+      }
+    }
   }
 
   .grecaptcha-badge {
