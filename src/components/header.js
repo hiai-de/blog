@@ -30,6 +30,7 @@ const Header = ({ siteTitle }) => {
             <Col xs={3}>
               <Img fluid={data.placeholderImage.childImageSharp.fluid} fadeIn={false} loading="eager" />
             </Col>
+            
             <Col xs={9} className="text-center">
               <h1 className="header-title">
                 <Link
