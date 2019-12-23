@@ -47,13 +47,11 @@ const CoverImage = ({ coverImage }) =>
 
 const BlogEntry = ({ node }) => 
   <Card>
-    <Link to={`/blog/${node.frontmatter.path}/`}>
-      <CoverImage coverImage={node.frontmatter.coverImage} />
-    </Link>
+    <CoverImage coverImage={node.frontmatter.coverImage} />
 
     <Card.Body>
       <Card.Title>
-        <Link to={`/blog/${node.frontmatter.path}/`}>
+        <Link to={`/blog/${node.frontmatter.path}/`} className="stretched-link">
           {node.frontmatter.title}
         </Link>
       </Card.Title>
