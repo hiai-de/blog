@@ -2,69 +2,79 @@
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins/breakpoints";
 
-  div.main {
-    min-height: 100vh;
-    padding-bottom: 60px;
-  }
-  
-  div.full-height {
-    min-height: 100vh;
-  }
-  
-  a.link-no-style {
-    &:hover {
-      text-decoration: none;
-    }
-  }
+div.main {
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
 
-  a.link-active > {
-    span.nav-link {
-      color: white !important;
-    }
+div.full-height {
+  min-height: 100vh;
+}
+
+a.link-no-style {
+  &:hover {
+    text-decoration: none;
   }
-  
-  .footer-col {
+}
+
+a.link-active > {
+  span.nav-link {
+    color: white !important;
+  }
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  footer {
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    footer {
-      display: flex;
-      position: relative;
-      bottom: 0;
-      margin-top: -60px;
-      height: 60px;
-      clear: both;
-      background-color: $color-primary;
-      color: white;
-      justify-content: center;
-      width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: -60px;
+    height: 60px;
+    clear: both;
+    background-color: $color-primary;
+    color: white;
+    justify-content: center;
+    width: 100%;
+
+    span {
+      align-self: center;
+      text-align: center;
+    }
+  }
+}
+
+.blog-post {
+  .blog-post-title {
+    h1 {
+      font-family: Raleway, sans-serif;
+    }
+  }
+}
+
+header {
+  background: $color-primary;
   
-      span {
-        align-self: center;
-        text-align: center;
-      }
+  .header-title {
+    font-family: Raleway, sans-serif;
+
+    @include media-breakpoint-between(xs, sm) {
+      font-size: 1.1rem;
+    }
+
+    @include media-breakpoint-between(sm, md) {
+      font-size: 1.6rem;
     }
   }
+}
 
-  header {
-    background: $color-primary;
-    
-    .header-title {
-      @include media-breakpoint-between(xs, sm) {
-        font-size: 1.1rem;
-      }
+.grecaptcha-badge {
+  visibility: hidden;
+}
 
-      @include media-breakpoint-between(sm, md) {
-        font-size: 1.6rem;
-      }
-    }
-  }
-
-  .grecaptcha-badge {
-    visibility: hidden;
-  }
-
-  html {
-    overflow-y: scroll; 
-  }
+html {
+  overflow-y: scroll; 
+}
