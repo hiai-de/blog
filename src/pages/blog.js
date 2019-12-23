@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import { Container, CardDeck, Card } from 'react-bootstrap'
+import { Card, Container, Row, Col } from 'react-bootstrap'
 import Layout from '../components/layout'
 
 export const query = graphql`
@@ -21,6 +21,16 @@ export const query = graphql`
     }
 `
 
+const createChunks = (array, size) => {
+  const chunks = [];
+
+  for (let i = 0; i < array.length; i += size) {
+    chunks.push(array.slice(i, i+size))
+  }
+  
+  return chunks;
+}
+
 const BlogEntry = ({ node }) => 
   <Card>
     <Card.Body>
@@ -34,12 +44,29 @@ const BlogEntry = ({ node }) =>
     </Card.Body>
   </Card>
 
-const BlogPage = ({ data }) => (
-  <Layout>
-    <h1>Blogartikel</h1>
+const BlogRow = ({ nodes }) =>
+  <Row>
+    {
+      nodes.map(({node}) => (
+        <Col key={node.id} className="pb-3 px-0 pr-lg-3" md={12} lg={4}>
+          <BlogEntry node={node} />
+        </Col>
+      ))
+    }
+  </Row>
 
-    { data.allMarkdownRemark.edges.map(({ node }) => <BlogEntry key={node.id} node={node} />) }
-  </Layout>
-)
+const BlogPage = ({ data }) => {
+  const chunks = createChunks(data.allMarkdownRemark.edges, 3)
+
+  return (
+    <Layout>
+      <h1>Blogartikel</h1>
+
+      <Container>
+        { chunks.map((x, index) => <BlogRow key={`Row_${index}`} nodes={x} />)}
+      </Container>
+    </Layout>
+  )
+}
 
 export default BlogPage
