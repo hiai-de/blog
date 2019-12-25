@@ -21,13 +21,24 @@ export const pageQuery = graphql`
           }
         }
       }
+      fields {
+        readingTime {
+          minutes
+        }
+      }
     }
   }
 `
 
+const ReadingTime = ({inMinutes}) => {
+  const roundedInMinutes = Math.ceil(inMinutes)
+
+  return <span>{roundedInMinutes} Minute{roundedInMinutes > 1 ? 'n' : ''} Lesezeit</span>
+}
+
 export default function Template({ data }) {
   const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter, html, fields } = markdownRemark
 
   return (
     <Layout>
@@ -50,7 +61,7 @@ export default function Template({ data }) {
 
         <Row>
           <Col>
-            <span>{frontmatter.date}</span>
+            <span>{frontmatter.date}</span> | <ReadingTime inMinutes={fields.readingTime.minutes} />
           </Col>
         </Row>
 
