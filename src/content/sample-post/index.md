@@ -1,5 +1,6 @@
 ---
 title: "Some sample blog post"
+author: marcellspies
 date: 2019-12-29
 path: "/sample-post"
 tags: ["tag1", "tag2"]

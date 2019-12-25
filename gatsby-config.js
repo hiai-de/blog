@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Heidelberger Institut für angewandte Informatik e.V.',
     description: 'Neuigkeiten von und Informationen über das Heidelberger Institut für angewandte Informatik',
-    author: '@gatsbyjs',
+    author: '@hiai-de',
     menuLinks: [
       {
         title: 'Blog',
@@ -17,6 +17,9 @@ module.exports = {
         link: '/imprint'
       }
     ],
+  },
+  mapping: {
+    'MarkdownRemark.frontmatter.author': 'AuthorsYaml',
   },
   plugins: [
     {
@@ -40,6 +43,13 @@ module.exports = {
         path: `${__dirname}/src/downloads`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'mappings',
+        path: `${__dirname}/src/mappings`,
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-transformer-remark',
@@ -57,6 +67,7 @@ module.exports = {
         ],
       },
     },
+    'gatsby-transformer-yaml',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sass',
     'gatsby-plugin-recaptcha',

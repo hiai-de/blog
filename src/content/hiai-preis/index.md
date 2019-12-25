@@ -1,5 +1,6 @@
 ---
 title: "Stiftung eines Preises für die beste BSc. Arbeit im Studiengang Angewandte Informatik"
+author: christophhahn
 date: 2014-11-10
 path: "/hiai-preis"
 ---

@@ -13,6 +13,9 @@ export const pageQuery = graphql`
         date(formatString: "LL", locale: "de")
         path
         title
+        author {
+          name
+        }
         coverImage {
           childImageSharp {
             fluid(maxWidth: 800) {
@@ -30,11 +33,16 @@ export const pageQuery = graphql`
   }
 `
 
-const ReadingTime = ({inMinutes}) => {
+const ReadingTime = ({ inMinutes }) => {
   const roundedInMinutes = Math.ceil(inMinutes)
 
   return <span>{roundedInMinutes} Minute{roundedInMinutes > 1 ? 'n' : ''} Lesezeit</span>
 }
+
+const AuthorInfo = ({ author }) =>
+  author
+    ? <span>{author.name} | </span>
+    : <React.Fragment />
 
 export default function Template({ data }) {
   const { markdownRemark } = data
@@ -61,7 +69,7 @@ export default function Template({ data }) {
 
         <Row>
           <Col>
-            <span>{frontmatter.date}</span> | <ReadingTime inMinutes={fields.readingTime.minutes} />
+            <AuthorInfo author={frontmatter.author} /><span>{frontmatter.date}</span> | <ReadingTime inMinutes={fields.readingTime.minutes} />
           </Col>
         </Row>
 
