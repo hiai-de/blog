@@ -1,5 +1,6 @@
 ---
 title: "Vortragsempfehlung: Algorithm Engineering for Large Data Sets"
+author: christophhahn
 date: 2014-12-18
 path: "/vortragsempfehlung-algorithm-engineering-for-large-data-sets"
 ---

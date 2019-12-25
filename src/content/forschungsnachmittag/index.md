@@ -1,5 +1,6 @@
 ---
 title: "HIAI-Forschungsnachmittag / 3. AIMM Treffen"
+author: mohammedyass
 date: 2010-05-05
 path: "/forschungsnachmittag"
 tags: ["treffen"]

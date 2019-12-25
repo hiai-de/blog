@@ -1,5 +1,6 @@
 ---
 title: "Vortragsempfehlung: Effiziente Messung und Steuerung der Prozess- und Softwarequalität"
+author: christophhahn
 date: 2015-12-08
 path: "/vortragsempfehlung-effiziente-messung-und-steuerung-der-prozess-und-softwarequalitaet"
 ---

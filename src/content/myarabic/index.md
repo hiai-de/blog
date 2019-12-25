@@ -1,5 +1,6 @@
 ---
 title: "MyArabic platform - kostenlose App-Serie zum Lernen von Arabisch"
+author: mohammedyass
 date: 2013-03-18
 path: "/myarabic"
 ---

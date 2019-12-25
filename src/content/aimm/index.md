@@ -1,5 +1,6 @@
 ---
 title: "4. AIMM Treffen und HIAI Mitgliederversammlung"
+author: mohammedyass
 date: 2010-11-22
 path: "/aimm"
 tags: ["treffen"]

@@ -1,5 +1,6 @@
 ---
 title: "Vortragsempfehlung: Sensorsysteme"
+author: christophhahn
 date: 2014-11-10
 path: "/vortrag-sensorsysteme"
 ---

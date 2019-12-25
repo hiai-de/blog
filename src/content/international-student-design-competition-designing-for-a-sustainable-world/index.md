@@ -1,5 +1,6 @@
 ---
 title: "International Student Design Competition"
+author: mohammedyass
 date: 2009-09-14
 path: "/international-student-design-competition-designing-for-a-sustainable-world"
 ---

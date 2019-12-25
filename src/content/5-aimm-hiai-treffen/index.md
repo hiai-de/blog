@@ -1,5 +1,6 @@
 ---
 title: "5. AIMM/HIAI-Treffen - Schwerpunkt: Windows Phone 7"
+author: mohammedyass
 date: 2011-06-30
 path: "/5-aimm-hiai-treffen"
 tags: ["treffen"]

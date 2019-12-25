@@ -1,5 +1,6 @@
 ---
 title: "Banking im Jahr 2035: Was gestern noch wie ein Märchen klang"
+author: christophhahn
 date: 2017-03-03
 path: "/vortrag-banking-im-jahr-2035"
 coverImage: ./images/credit-card-1730085_1280.jpg

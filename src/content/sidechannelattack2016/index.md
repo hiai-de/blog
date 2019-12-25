@@ -1,5 +1,6 @@
 ---
 title: "Call for Participation: Practical Demonstration of Side-Channel Attacks as a Serious Threat to the Security of Embedded Systems"
+author: christophhahn
 date: 2016-09-27
 path: "/sidechannelattack2016"
 ---

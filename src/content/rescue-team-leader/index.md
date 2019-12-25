@@ -1,5 +1,6 @@
 ---
 title: "Browser Game \"Rescue Team Leader\""
+author: mohammedyass
 date: 2013-03-18
 path: "/rescue-team-leader"
 ---

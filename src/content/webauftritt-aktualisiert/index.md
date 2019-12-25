@@ -1,5 +1,6 @@
 ---
 title: "Webauftritt aktualisiert"
+author: christophhahn
 date: 2014-10-31
 path: "/webauftritt-aktualisiert"
 ---

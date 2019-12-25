@@ -1,5 +1,6 @@
 ---
 title: "Veranstaltungsreihe Softwareentwicklung 2011 -  Schwerpunkt Mobile-/Webentwicklung"
+author: mohammedyass
 date: 2011-01-12
 path: "/veranstaltungsreihe-2011"
 ---

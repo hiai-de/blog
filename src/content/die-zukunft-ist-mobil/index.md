@@ -1,5 +1,6 @@
 ---
 title: "Die Zukunft ist mobil"
+author: christophhahn
 date: 2010-11-23
 path: "/die-zukunft-ist-mobil"
 ---

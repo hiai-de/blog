@@ -1,5 +1,6 @@
 ---
 title: "Einladung zum Vortrag \"Requirements Engineering\""
+author: christophhahn
 date: 2017-01-18
 path: "/einladung-zum-vortrag-requirements-engineering"
 ---
