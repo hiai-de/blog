@@ -52,6 +52,7 @@ module.exports = {
               tracedSVG: true,
             },
           },
+          'gatsby-remark-prismjs',
         ],
       },
     },
