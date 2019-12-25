@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import Img from 'gatsby-image'
 import Helmet from 'react-helmet'
 import { Container, Row, Col } from 'react-bootstrap'
+import { FaUser, FaCalendar, FaClock } from 'react-icons/fa'
 
 export const pageQuery = graphql`
   query($id: String!) {
@@ -36,12 +37,12 @@ export const pageQuery = graphql`
 const ReadingTime = ({ inMinutes }) => {
   const roundedInMinutes = Math.ceil(inMinutes)
 
-  return <span>{roundedInMinutes} Minute{roundedInMinutes > 1 ? 'n' : ''} Lesezeit</span>
+  return <span><FaClock /> {roundedInMinutes} Minute{roundedInMinutes > 1 ? 'n' : ''} Lesezeit</span>
 }
 
 const AuthorInfo = ({ author }) =>
   author
-    ? <span>{author.name} | </span>
+    ? <span><FaUser /> {author.name} | </span>
     : <React.Fragment />
 
 export default function Template({ data }) {
@@ -69,7 +70,7 @@ export default function Template({ data }) {
 
         <Row>
           <Col>
-            <AuthorInfo author={frontmatter.author} /><span>{frontmatter.date}</span> | <ReadingTime inMinutes={fields.readingTime.minutes} />
+            <AuthorInfo author={frontmatter.author} /><span><FaCalendar /> {frontmatter.date}</span> | <ReadingTime inMinutes={fields.readingTime.minutes} />
           </Col>
         </Row>
 
