@@ -37,6 +37,8 @@ Run `yarn develop` to run the Gatsby development server. After Gatsy is initiali
 
 Everyone is welcome to contribute to this repository by creating a pull request.
 
+After you did create the pull request a temporary preview environment is automatically set up where you can take a look your changes. You can get the link to the environment on the pull request page (Details link of the `Deploy preview ready` check).
+
 ### Blog entries
 
 Adding a new blog post is quite easy. Just clone a folder in the [content directory](src/content), rename it and modify the header and content of `index.md`. Images can be placed in a subfolder called `images`. Just browse through the content directory to find several samples.
