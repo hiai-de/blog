@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import Img from 'gatsby-image'
-import Helmet from 'react-helmet'
 import { Container, Row, Col } from 'react-bootstrap'
 import { FaUser, FaCalendar, FaClock } from 'react-icons/fa'
 
@@ -51,10 +51,8 @@ export default function Template({ data }) {
 
   return (
     <Layout>
-      <Helmet>
-        <title>{frontmatter.title}</title>
-      </Helmet>
-
+      <SEO title={frontmatter.title} />
+      
       <Container className="blog-post">
         {
           frontmatter.coverImage

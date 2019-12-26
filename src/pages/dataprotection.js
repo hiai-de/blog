@@ -6,7 +6,7 @@ import SEO from '../components/seo'
 
 const DataProtectionPage = () => (
   <Layout>
-    <SEO>Datenschutzerklärung</SEO>
+    <SEO title="Datenschutzerklärung" />
     
     <h1>Datenschutzerklärung</h1>
     <h2 id="m14">Einleitung</h2>
