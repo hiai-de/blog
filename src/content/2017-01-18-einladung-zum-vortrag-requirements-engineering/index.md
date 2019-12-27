@@ -2,7 +2,6 @@
 title: "Einladung zum Vortrag \"Requirements Engineering\""
 author: christophhahn
 date: 2017-01-18
-path: "/einladung-zum-vortrag-requirements-engineering"
 ---
 
 Referenten: Dr.-Ing. Sebastian Adam & Dr. Norman Riegel Zeit: 25. Januar 2017, 18:00 – 19:30 Uhr Ort: 69123 Heidelberg, Ludwig-Guttmannstr. 6, Raum T111, 11. OG, SRH Hochschule Heidelberg

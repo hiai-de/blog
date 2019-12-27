@@ -2,8 +2,6 @@
 title: "9. AIMM Treffen und HIAI Mitgliederversammlung"
 author: christophhahn
 date: 2016-07-09
-path: "/9-aimm-treffen-und-hiai-mitgliederversammlung"
-tags: ["treffen"]
 coverImage: ./images/WP_20141023_075_my.jpg
 ---
 

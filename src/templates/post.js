@@ -12,7 +12,6 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "LL", locale: "de")
-        path
         title
         author {
           name

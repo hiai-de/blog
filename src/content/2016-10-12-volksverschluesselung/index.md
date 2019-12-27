@@ -2,7 +2,6 @@
 title: "Vortragsempfehlung: Volksverschlüsselung"
 author: christophhahn
 date: 2016-10-12
-path: "/volksverschluesselung"
 ---
 
 Referent: Ulrich Waldmann, Fraunhofer SIT Ort: SRH Hochschule Heidelberg, Großer Hörsaal, Ludwig Guttmann Str. 6, 69123 Heidelberg Zeit: Mittwoch, der 19.10. 2016 ab 18:00 - 19:30

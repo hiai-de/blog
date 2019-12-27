@@ -2,8 +2,6 @@
 title: "4. AIMM Treffen und HIAI Mitgliederversammlung"
 author: mohammedyass
 date: 2010-11-22
-path: "/aimm"
-tags: ["treffen"]
 ---
 
 Am 22. November 2010 fand das vierte AIMM Treffen statt. Anwesend waren über 30 Teilnehmer. In dieser Runde wurden zahlreiche interessante Fachgespräche geführt und Meinungen ausgetauscht.

@@ -2,7 +2,6 @@
 title: "Das Gesundheitsforum des Landes Baden-Württemberg"
 author: mohammedyass
 date: 2001-01-01
-path: "/das-gesundheitsforum-des-landes-baden-wuerttemberg"
 ---
 
 Im Rahmen der Untersuchung zur Etablierung einer Plattform für das Gesundheitsforum des Landes Baden-Württemberg wurde der Fachbereich Informatik Ende 2001 vom Sozialministerium mit der Erstellung eines Prototyps beauftragt.

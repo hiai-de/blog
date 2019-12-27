@@ -2,8 +2,6 @@
 title: "HIAI-Forschungsnachmittag / 3. AIMM Treffen"
 author: mohammedyass
 date: 2010-05-05
-path: "/forschungsnachmittag"
-tags: ["treffen"]
 ---
 
 Am 17. Mai 2010 wurde die Reihe „HIAI-Forschungsnachmittage“ fortgesetzt, bei welcher u.a. Studenten der Hochschule Heidelberg diverse Forschungsergebnisse aus der Vorlesung „Angewandte Forschung“ präsentierten.

@@ -2,7 +2,6 @@
 title: "Vortragsempfehlung: Effiziente Messung und Steuerung der Prozess- und Softwarequalität"
 author: christophhahn
 date: 2015-12-08
-path: "/vortragsempfehlung-effiziente-messung-und-steuerung-der-prozess-und-softwarequalitaet"
 ---
 
 Referent: Dr. Eberhard Kuhn Zeit: 27. Januar 2016, 17:00 – 18:30 Uhr Ort: SRH Hochschule Heidelberg, Ludwig-Guttmannstr. 6, 69123 Heidelberg, Großer Hörsaal

@@ -2,7 +2,6 @@
 title: "Veranstaltungsreihe Softwareentwicklung 2011 -  Schwerpunkt Mobile-/Webentwicklung"
 author: mohammedyass
 date: 2011-01-12
-path: "/veranstaltungsreihe-2011"
 ---
 
 Das Heidelberger Institut für angewandte Informatik e.V. (HIAI) und die Fakultät für Informatik der SRH Hochschule Heidelberg starten ab Januar 2011 eine Veranstaltungsreihe zu aktuellen Themen der Softwareentwicklung. Der erste Teil der Veranstaltungsreihe hat einen starken Schwerpunkt auf Mobile- und Webentwicklung.

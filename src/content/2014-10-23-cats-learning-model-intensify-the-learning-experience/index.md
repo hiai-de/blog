@@ -2,7 +2,6 @@
 title: "HIAI/AIMM Vortrag: Intensify the learning experience"
 author: christophhahn
 date: 2014-10-23
-path: "/cats-learning-model-intensify-the-learning-experience"
 coverImage: ./images/CATSOct14-Preview.png
 ---
 

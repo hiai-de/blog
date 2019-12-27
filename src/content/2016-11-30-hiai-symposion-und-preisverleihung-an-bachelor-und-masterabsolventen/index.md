@@ -2,7 +2,6 @@
 title: "HIAI Symposion und Preisverleihung an Bachelor- und Masterabsolventen"
 author: christophhahn
 date: 2016-11-30
-path: "/hiai-symposion-und-preisverleihung-an-bachelor-und-masterabsolventen"
 coverImage: ./images/redner.jpg
 ---
 

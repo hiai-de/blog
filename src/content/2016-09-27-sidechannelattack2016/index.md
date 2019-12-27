@@ -2,7 +2,6 @@
 title: "Call for Participation: Practical Demonstration of Side-Channel Attacks as a Serious Threat to the Security of Embedded Systems"
 author: christophhahn
 date: 2016-09-27
-path: "/sidechannelattack2016"
 ---
 
 Speaker: D. E. Lazich Date: September 27, 15:45 - 16:30 Location: Bonhoefferstraße 11 (Room 205), 69123 Heidelberg

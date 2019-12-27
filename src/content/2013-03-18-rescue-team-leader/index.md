@@ -2,7 +2,6 @@
 title: "Browser Game \"Rescue Team Leader\""
 author: mohammedyass
 date: 2013-03-18
-path: "/rescue-team-leader"
 ---
 
 "Rescue Team Leader" ist ein Browser-Game für die Feuerwehr-Grundausbildung und die von WEBER RESCUE Systems definierten Ausbildungsinhalte für Seminare.

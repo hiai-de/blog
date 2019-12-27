@@ -10,8 +10,9 @@ export const query = graphql`
       allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
         edges {
           node {
+            id
+            excerpt
             frontmatter {
-              path
               title
               date(formatString: "LL", locale: "de")
               coverImage {
@@ -22,8 +23,9 @@ export const query = graphql`
                 }
               }
             }
-            id
-            excerpt
+            fields {
+              slug
+            }
           }
         }
       }
@@ -51,7 +53,7 @@ const BlogEntry = ({ node }) =>
 
     <Card.Body>
       <Card.Title>
-        <Link to={`/blog/${node.frontmatter.path}/`} className="stretched-link">
+        <Link to={`/blog${node.fields.slug}`} className="stretched-link">
           {node.frontmatter.title}
         </Link>
       </Card.Title>

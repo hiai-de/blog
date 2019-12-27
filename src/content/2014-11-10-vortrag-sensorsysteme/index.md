@@ -2,7 +2,6 @@
 title: "Vortragsempfehlung: Sensorsysteme"
 author: christophhahn
 date: 2014-11-10
-path: "/vortrag-sensorsysteme"
 ---
 
 **Referent: Prof. Gunther Krieg** Ort: Bonhoefferstrasse 11, Raum 203, 69123 Heidelberg Zeit: Dienstag, den 13. Januar 2015, 11:00 – 12:00

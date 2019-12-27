@@ -2,7 +2,6 @@
 title: "Vortragsempfehlung: How much Energy needs a bit?"
 author: christophhahn
 date: 2014-12-18
-path: "/vortragsempfehlung-how-much-energy-needs-a-bit"
 ---
 
 Special-Lecture: Prof. Dr. techn. Dr. h. c. Josef A. Nossek

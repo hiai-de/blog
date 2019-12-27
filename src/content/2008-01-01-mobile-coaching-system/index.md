@@ -2,7 +2,6 @@
 title: "Mobile Coaching System"
 author: mohammedyass
 date: 2008-01-01
-path: "/mobile-coaching-system"
 ---
 
 Im Jahre 2008 wurde die weltweit erste Software für professionelle Trainingssteuerung fertiggestellt. Die Trainingssteuerungssoftware wurde vom Heidelberger Institut für angewandte Informatik im Auftrag der MCS Rolf Staguhn GmbH entwickelt. Rolf Staguhn ist DTB–A Trainer, staatl. geprüfter Tennislehrer (VDT), PTR-Professional und Leiter der Tennisakademie Rhein Neckar.

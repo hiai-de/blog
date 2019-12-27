@@ -2,7 +2,6 @@
 title: "Die Zukunft ist mobil"
 author: christophhahn
 date: 2010-11-23
-path: "/die-zukunft-ist-mobil"
 ---
 
 Aktuell telefonieren nahezu 90% der Weltbevölkerung mobil (Bitkom). Dieser Trend hat sich in den letzten Jahren exponentiell entwickelt.

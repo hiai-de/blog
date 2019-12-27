@@ -2,7 +2,6 @@
 title: "Webauftritt aktualisiert"
 author: christophhahn
 date: 2014-10-31
-path: "/webauftritt-aktualisiert"
 ---
 
 Seit heute erscheint die HIAI Website im neuen Gewand. Unsere Website ist nun in einem aktuellen, schlichten Layout gehalten. Durch das responsible Layout sind die Inhalte auch auf mobilen Geräten sehr gut lesbar. Auf Smartphones wird die Anzeige nochmals weiter optimiert.
