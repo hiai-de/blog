@@ -50,7 +50,6 @@ module.exports = {
         path: `${__dirname}/src/mappings`,
       },
     },
-    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -69,6 +68,8 @@ module.exports = {
     },
     'gatsby-transformer-yaml',
     'gatsby-transformer-sharp',
+    'gatsby-plugin-netlify-cms',
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-recaptcha',
     'gatsby-plugin-sharp',
