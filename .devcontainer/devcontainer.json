@@ -19,6 +19,7 @@
     "postCreateCommand": "yarn install",
 
     "extensions": [
-        "dbaeumer.vscode-eslint"
+        "dbaeumer.vscode-eslint",
+        "sibiraj-s.vscode-scss-formatter"
     ]
 }
