@@ -38,7 +38,7 @@ const AboutPage = () => {
 
         <Form.Group>
           <Form.Label>Ihre Nachricht</Form.Label>
-          <Form.Control as="textarea" rows={3} required={true} />
+          <Form.Control as="textarea" rows={3} required={true} name="message" />
         </Form.Group>
 
         <Form.Group>
