@@ -6,7 +6,7 @@ module.exports = {
     menuLinks: [
       {
         title: 'Blog',
-        link: '/blog'
+        link: '/'
       },
       {
         title: 'Über uns',
