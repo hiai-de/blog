@@ -1,7 +1,7 @@
 ---
-title: "Some sample blog post"
+title: "Neuer Webauftritt des HIAI"
 author: marcellspies
-date: 2019-12-29
+date: 2020-08-16
 coverImage: ./images/sample.png
 ---
 
