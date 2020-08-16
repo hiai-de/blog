@@ -13,6 +13,10 @@ module.exports = {
         link: '/about'
       },
       {
+        title: 'Kontaktformular',
+        link: '/contact'
+      },
+      {
         title: 'Impressum',
         link: '/imprint'
       }

@@ -23,7 +23,7 @@ const AboutPage = () => {
         Sie haben eine Anfrage, einen Hinweis oder eine sonstige Nachricht an uns? Bitte nutzen Sie unser Kontaktformular.
       </p>
 
-      <h2>Formular</h2>
+      <br />
 
       <Form name="Contact Form" method="POST" data-netlify="true" action="/contact/thank-you">
         <input type="hidden" name="form-name" value="Contact Form" />
