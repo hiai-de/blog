@@ -8,7 +8,7 @@ const IndexPage = () => (
 
     <h1>Willkommen</h1>
     
-    <p>Willkommen beim HIAI</p>
+    <p>Willkommen beim HIAI. Test!</p>
   </Layout>
 )
 

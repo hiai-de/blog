@@ -1,5 +1,5 @@
 {
-    "name": "Gatsby Blog",
+    "name": "HIAI Blog",
     "dockerFile": "Dockerfile",
 
     // Specifies a list of ports that should be published.
