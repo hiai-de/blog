@@ -2,7 +2,7 @@
 
 Welcome to our new HIAI Blog, based on the Gatsby static site generator.
 
-You can find the live version of the blog here: https://hiai-de.netlify.com
+You can find the live version of the blog here: https://hiai.de (and https://hiai-de.netlify.app)
 
 # Installation
 
