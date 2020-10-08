@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import { Card, Container, Row, Col } from 'react-bootstrap'
+import { FaRss } from 'react-icons/fa'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
 
@@ -82,6 +83,12 @@ const BlogPage = ({ data }) => {
       
       <Container>
         { chunks.map((x, index) => <BlogRow key={`Row_${index}`} nodes={x} />)}
+
+        <Row>
+          <Col className="pb-3">
+            <a href="/blog.xml"><FaRss /> RSS feed</a>
+          </Col>
+        </Row>
       </Container>
     </Layout>
   )
