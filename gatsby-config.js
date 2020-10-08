@@ -21,6 +21,7 @@ module.exports = {
         link: '/imprint'
       }
     ],
+    siteUrl: 'https://hiai.de',
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorsYaml',
@@ -77,6 +78,48 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-recaptcha',
     'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-feed',
+      options: {
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                const url = `${site.siteMetadata.siteUrl}/blog${edge.node.fields.slug}`
+
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url,
+                  guid: url,
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/blog.xml',
+          }
+        ]
+      }
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
