@@ -92,7 +92,7 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   url,
                   guid: url,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
                 })
               })
             },
