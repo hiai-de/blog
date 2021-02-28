@@ -33,15 +33,17 @@ export const pageQuery = graphql`
   }
 `
 
+const verticalAlignmentStyle = { verticalAlign: 'middle' }
+
 const ReadingTime = ({ inMinutes }) => {
   const roundedInMinutes = Math.ceil(inMinutes)
 
-  return <span><FaClock /> {roundedInMinutes} Minute{roundedInMinutes > 1 ? 'n' : ''} Lesezeit</span>
+  return <span><FaClock /> <span style={verticalAlignmentStyle}>{roundedInMinutes} Minute{roundedInMinutes > 1 ? 'n' : ''} Lesezeit</span></span>
 }
 
 const AuthorInfo = ({ author }) =>
   author
-    ? <span><FaUser /> {author.name} | </span>
+    ? <span><FaUser /> <span style={verticalAlignmentStyle}>{author.name}</span> | </span>
     : <React.Fragment />
 
 export default function Template({ data }) {
@@ -67,7 +69,7 @@ export default function Template({ data }) {
 
         <Row>
           <Col>
-            <AuthorInfo author={frontmatter.author} /><span><FaCalendar /> {frontmatter.date}</span> | <ReadingTime inMinutes={fields.readingTime.minutes} />
+            <AuthorInfo author={frontmatter.author} /><span><FaCalendar /> <span style={verticalAlignmentStyle}>{frontmatter.date}</span></span> | <ReadingTime inMinutes={fields.readingTime.minutes} />
           </Col>
         </Row>
 
