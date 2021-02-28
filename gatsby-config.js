@@ -133,17 +133,11 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: [
-          {
-            family: 'Roboto',
-            subsets: ['latin']
-          },
-          {
-            family: 'Raleway',
-            subsets: ['latin']
-          },
+          'Roboto',
+          'Raleway',
         ],
       },
     }
